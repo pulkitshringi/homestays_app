@@ -1,0 +1,91 @@
+/* public/css/style.css */
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.navbar{
+    background-color:white;
+    height:5rem;
+}
+
+
+.fa-compass{
+    color:#fe424d;
+    font-size:2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links a{
+    width:100%;
+    text-decoration:none; /* remove underline */
+    color:#222222;
+}
+.f-info-links a:hover{
+    text-decoration:underline;
+}
+.f-info{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#f8f9fa;
+    position:absolute;
+    width:100%;
+    bottom:0; /* sticking footer to bottom */
+}
+footer{
+    padding-top: 5rem;
+    width:100%;
+}
+body{
+    position: relative;
+    min-height: 100vh; /* sticking footer to bottom even when scrolling */
+}
+.f-info-socials,
+.f-info-brand,
+.f-info-links {
+    width: 100%;
+    text-align:center;
+}
+.f-info-socials i{
+    margin-left: 0.5rem;
+}
+
+/* cards */
+.card-listing,.card-show{
+    border:none !important;
+    margin-bottom:2rem;
+}
+.card-img-top{
+    height: 15rem; 
+    border-radius: 1rem !important; /* rounded corners */
+    object-fit: cover; /* image will cover the whole card */
+    width:100% !important; /* image will cover the whole width */
+}
+.card-body{
+    padding:0 !important; 
+
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing_link{
+    text-decoration:none;
+    color: inherit;
+}
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.1;
+    background-color:white;
+}
+.add-btn,.edit-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+
+}
+
+#map{
+    height:300px;
+    width:100%;
+}
