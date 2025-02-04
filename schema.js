@@ -1,3 +1,4 @@
+// schema.js
 const Joi = require('joi');
 
 module.exports.listingSchema = Joi.object({
