@@ -24,7 +24,7 @@
           <%=listing.country%>
         </p>
         <!-- edit link -->
-        <% if (currentUser && currentUser._id === listing.owner._id) { %>
+        <% if (currentUser && currentUser._id.toString() === listing.owner._id.toString()) { %> 
          <div class="row">
     <div class="col-auto">
     <a class="btn btn-dark edit-btn"href="/listings/<%=listing._id%>/edit">Edit</a>
