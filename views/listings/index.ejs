@@ -39,7 +39,7 @@
     display: flex;
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
     justify-content: center; /* Center-align items on smaller screens */
-    gap: 15px; /* Add gap between cards */
+    /* gap: 15px; Add gap between cards */
   }
 
   @media (max-width: 576px) {
@@ -93,7 +93,7 @@
     </div> -->
     <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-1">
     <% for(list of listings) {%>
-        <div class="card card-listing col">
+        <div class="card card-listing col" style="width: 20rem;">
           <a href="/listings/<%=list._id%>" class="listing_link">
             <img src="<%=list.image.url%>" class="card-img-top" alt="listing_image">
             <div class="card-img-overlay">
