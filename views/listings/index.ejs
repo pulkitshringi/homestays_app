@@ -30,6 +30,29 @@
 .tax-info{
   display: none;
 }
+ /* new */
+ .card-listing {
+    margin: 15px 0; /* Add some spacing between cards */
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: center; /* Center-align items on smaller screens */
+    gap: 15px; /* Add gap between cards */
+  }
+
+  @media (max-width: 576px) {
+    .row {
+      justify-content: center;
+    }
+
+    .card-listing {
+      width: 100%; /* Ensure cards take full width on small screens */
+    }
+  }
+
+
 </style>
 <body>
     <!-- <div id="icons">
