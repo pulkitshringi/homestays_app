@@ -24,8 +24,7 @@
           <%=listing.country%>
         </p>
         <!-- edit link -->
-        <%
-         if(currentUser) { %> 
+        <% if(currentUser) { %> 
          <div class="row">
     <div class="col-auto">
     <a class="btn btn-dark edit-btn"href="/listings/<%=listing._id%>/edit">Edit</a>
