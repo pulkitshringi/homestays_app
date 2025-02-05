@@ -42,12 +42,22 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
+      </div>
+
+      <div class="navbar-search ms-auto">
+        <form class="d-flex" role="search">
+          <input class="form-control search-inp me-2" type="search" placeholder="Search destinations" aria-label="Search">
+          <button class="btn btn-search" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if (!currentUser) { %>
-          <a class="nav-link" href="/signup">Sign up</a>
-          <a class="nav-link" href="/login">Login</a>
+          <b><a class="nav-link" href="/signup">Sign up</a></b>
+          <b><a class="nav-link" href="/login">Login</a></b>
         <% } else { %>
-          <a class="nav-link" href="/logout">Logout</a>
+          <b><a class="nav-link" href="/logout">Log out</a></b>
         <% } %>
       </div>
     </div>
