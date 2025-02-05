@@ -1,17 +1,58 @@
 <!-- views/includes/footer.ejs -->
- <footer>
+<footer>
     <div class="f-info">
         <div class="f-info-socials">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-x-twitter"></i>
-            <i class="fa-brands fa-square-instagram"></i>
+            <!-- GitHub Link -->
+            <a href="https://github.com/pulkitshringi/homestays_app" target="_blank" class="f-info-social-link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/pulkitshringi/" target="_blank" class="f-info-social-link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
         </div>
         <div class="f-info-brand">
-           &copy; Wanderlust Private Limited
-        </div>
-        <div class="f-info-links">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
+            &copy; <a href="https://www.linkedin.com/in/pulkitshringi/" target="_blank" class="f-info-brand-link">Pulkit Shringi</a>
         </div>
     </div>
- </footer>
+</footer>
+
+<style>
+    .f-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f8f9fa;
+    }
+
+    .f-info-socials {
+        display: flex;
+        gap: 15px;
+    }
+
+    .f-info-social-link {
+        text-decoration: none;
+        color: #6c757d;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .f-info-social-link:hover {
+        color: #0d6efd; /* Hover color */
+    }
+
+    .f-info-brand {
+        font-size: 1rem;
+    }
+
+    .f-info-brand-link {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .f-info-brand-link:hover {
+        text-decoration: underline;
+    }
+</style>
