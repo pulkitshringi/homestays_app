@@ -14,8 +14,25 @@
     font-size: 0.9rem;
     border-radius: 40px;
   }
+  /* new */
+  .navbar-collapse {
+    background-color: white; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    background-color: rgba(0, 0, 0, 0.8); /* Add background when expanded */
+  }
+
+  .navbar-nav .nav-link {
+    color: white; /* Adjust text color for visibility */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: lightgray; /* Optional hover effect */
+  }
  </style>
- 
+
 <nav class="navbar navbar-expand-md bg-body-white border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><i class="fa-regular fa-compass"></i></a>
@@ -25,22 +42,12 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
-      </div>
-
-      <div class="navbar-search ms-auto">
-        <form class="d-flex" role="search">
-          <input class="form-control search-inp me-2" type="search" placeholder="Search destinations" aria-label="Search">
-          <button class="btn btn-search" type="submit">Search</button>
-        </form>
-      </div>
-
-      <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if (!currentUser) { %>
-          <b><a class="nav-link" href="/signup">Sign up</a></b>
-          <b><a class="nav-link" href="/login">Login</a></b>
+          <a class="nav-link" href="/signup">Sign up</a>
+          <a class="nav-link" href="/login">Login</a>
         <% } else { %>
-          <b><a class="nav-link" href="/logout">Log out</a></b>
+          <a class="nav-link" href="/logout">Logout</a>
         <% } %>
       </div>
     </div>
