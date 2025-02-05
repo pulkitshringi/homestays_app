@@ -102,12 +102,10 @@ app.use((err,req,res,next)=>{
 
 app.get('/search', async (req, res) => {
     const searchQuery = req.query.query; // Extract the search term
-  
     try {
       const matchingListings = await Listing.find({
         title: { $regex: searchQuery, $options: 'i' }, // Case-insensitive search
       });
-  
       res.json(matchingListings); // Send matching listings as JSON
     } catch (err) {
       console.error(err);
