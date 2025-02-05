@@ -1,33 +1,5 @@
 <!-- /views/listings/show.ejs -->
 <%layout('layouts/boilerplate')%>
-<style>
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.card-text {
-  margin: 10px 0;
-}
-
-.starability-result {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
-.btn {
-  margin-top: 10px;
-}
-
-</style>
 <script>
   const mapToken = '<%=process.env.MAP_TOKEN%>';
   let list = <%-JSON.stringify(listing)%>
@@ -110,11 +82,9 @@
     Rated: 3 stars
   </p>
       </div>
-      <% if (currentUser && currentUser._id.toString() === review.author._id.toString()) { %>
       <form class="mb-3 mt-3" method="POST" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
         <button class="btn btn-dark">Delete</button>
       </form>
-      <% } %>
       </div>
       <% } %>
       <hr>
