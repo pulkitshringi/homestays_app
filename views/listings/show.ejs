@@ -1,8 +1,30 @@
 <!-- /views/listings/show.ejs -->
 <%layout('layouts/boilerplate')%>
 <style>
-  .card-padding {
-  padding: 10px;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: 10px 0;
+}
+
+.starability-result {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.btn {
+  margin-top: 10px;
 }
 
 </style>
@@ -81,16 +103,18 @@
       <div class="row">
       <%for(review of listing.reviews) { %>
         <div class="card col-5 mb-3 ms-3"> 
-          <div class="card-body a card-padding">
+          <div class="card-body a">
             <div class="card-title"><b>@<%=review.author.username%></b></div>
             <p class="card-text"><%=review.comment%></p>
   <p class="starability-result card-text" data-rating="<%=review.rating%>">
     Rated: 3 stars
   </p>
       </div>
+      <% if (currentUser && currentUser._id.toString() === review.author._id.toString()) { %>
       <form class="mb-3 mt-3" method="POST" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
         <button class="btn btn-dark">Delete</button>
       </form>
+      <% } %>
       </div>
       <% } %>
       <hr>
