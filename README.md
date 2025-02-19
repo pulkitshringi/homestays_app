@@ -18,23 +18,6 @@ A full-stack web app that makes listing, booking, and managing homestays effortl
 
 ---
 
-## Tech Stack
-
-### **Frontend**
-- HTML, CSS, JavaScript
-- Material-UI
-- Bootstrap
-- EJS Templates 
-
-### **Backend**
-- Node.js
-- Express.js
-
-### **Database**
-- MongoDB
-
----
-
 ## Contact
 
 For inquiries or collaborations, reach out at [pulkitshringi02@gmail.com](mailto:pulkitshringi02@gmail.com) or connect on LinkedIn!
