@@ -37,4 +37,4 @@ A full-stack web app that makes listing, booking, and managing homestays effortl
 
 ## Contact
 
-For inquiries or collaborations, reach out at [your-email@example.com](mailto:pulkitshringi02@gmail.com) or connect on LinkedIn!
+For inquiries or collaborations, reach out at [pulkitshringi02@gmail.com](mailto:pulkitshringi02@gmail.com) or connect on LinkedIn!
