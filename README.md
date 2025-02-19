@@ -10,10 +10,9 @@ A full-stack web app that makes listing, booking, and managing homestays effortl
 
 - **MVC Architecture:** Ensures structured and maintainable code.
 - **Responsive Design:** Optimized for both desktop and mobile devices.
-- **Full CRUD Operations:** Seamless backend integration for property management.
 - **Secure Authentication:** Implements JWT authentication and role-based access control.
 - **Cloud Storage:** Uses Cloudinary for efficient image management.
-- **Database Sotrage:** Uses MongoDB Atlas for storing databases.
+- **Database Storage:** Uses MongoDB Atlas for storing databases.
 - **Deployment:** Hosted on Render for easy access and scalability.
 
 ---
