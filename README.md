@@ -1,6 +1,6 @@
 # Homestays Full Stack App
 
-A full-stack web app that makes listing, booking, and managing homestays effortless. With secure authentication, detailed property listings, and an intuitive UI, it ensures a seamless experience for both hosts and guests alike.
+A full-stack web app that makes listing and managing homestays effortless. With secure authentication, detailed property listings, and an intuitive UI, it ensures a seamless experience for both hosts and guests alike.
 
 🔗 **Live Demo:** [Homestays App](https://homestays-app.onrender.com/listings)
 
